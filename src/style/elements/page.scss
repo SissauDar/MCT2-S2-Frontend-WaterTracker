@@ -1,0 +1,12 @@
+body,
+html {
+	font: #{$font-size}/#{$line-height} $font-stack;
+	//font: 16px/1.5 "Oswald" dit is de shorthand
+	background: map-get($neutral-colors, light);
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: $alpha-color;
+	color: map-get($neutral-colors, light);
+}
